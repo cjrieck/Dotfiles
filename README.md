@@ -5,4 +5,4 @@ My dotfiles
 
 
 ## Screenshot
-![Terminal](https://github.com/cjrieck/Dotfiles/blob/master/images/terminal-window.png)
+![Terminal](https://raw.github.com/cjrieck/Dotfiles/master/images/terminal-window.png)
