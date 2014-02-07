@@ -1,4 +1,3 @@
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 ##
 # Your previous /Users/Clayton/.bash_profile file was backed up as /Users/Clayton/.bash_profile.macports-saved_2013-02-11_at_16:02:03
@@ -16,7 +15,7 @@ function git-branch-prompt {
 }
 
 # Finished adapting your PATH environment variable for use with MacPorts.
-export PATH=/usr/local/heroku/bin/:usr/local/bin:/opt/local/bin:/opt/local/sbin:/Users/Clayton/.rvm/gems/ruby-1.9.3-p362/bin:/Users/Clayton/.rvm/gems/ruby-1.9.3-p362@global/bin:/Users/Clayton/.rvm/rubies/ruby-1.9.3-p362/bin:/Users/Clayton/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin
+export PATH=$PATH:/usr/local/heroku/bin/:usr/local/bin:/opt/local/bin:/opt/local/sbin:/Users/Clayton/.rvm/gems/ruby-1.9.3-p362/bin:/Users/Clayton/.rvm/gems/ruby-1.9.3-p362@global/bin:/Users/Clayton/.rvm/rubies/ruby-1.9.3-p362/bin:/Users/Clayton/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin
 # export PS1="\033[95m\033[1m\w\033[0m \n\033[96m❯\033[0m "
 
 export PS1="\033[95m\033[1m\w\[\033[0m\]\[\033[0;32m\]\$(git-branch-prompt)\[\033[0m\] \n\033[96m❯\033[0m "
@@ -29,8 +28,7 @@ alias xcode='open -a Xcode'
 # ------------------------------------------------------------------------------
 
 alias ..='cd ..'
-alias desktop='cd Desktop'
-
+alias repos='cd ~/Desktop/Repos/'
 # GIT COMMANDS
 # -------------------------------
 alias clone='git clone'
@@ -41,3 +39,8 @@ alias add='git add'
 alias all='git add . -v'
 alias checkout='git checkout'
 # -------------------------------
+# SSH Aliases
+alias anubis='ssh Clayton@anubis'
+#--------------------------------
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
