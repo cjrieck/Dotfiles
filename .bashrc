@@ -38,9 +38,11 @@ alias commit='git commit'
 alias add='git add'
 alias all='git add . -v'
 alias checkout='git checkout'
+alias status='git status'
 # -------------------------------
 # SSH Aliases
 alias anubis='ssh Clayton@anubis'
+alias minke='ssh barbara@minke.wheatoncollege.edu'
 #--------------------------------
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
