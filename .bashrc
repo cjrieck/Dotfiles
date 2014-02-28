@@ -22,6 +22,7 @@ export PS1="\033[95m\033[1m\w\[\033[0m\]\[\033[0;32m\]\$(git-branch-prompt)\[\03
 # APPS
 # ------------------------------------------------------------------------------
 alias subl='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
+alias atom='/Applications/Atom.app/Contents/Resources/app/atom.sh'
 alias itunes='open -a iTunes'
 alias chrome='open -a Google\ Chrome'
 alias xcode='open -a Xcode'
