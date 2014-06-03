@@ -3,6 +3,10 @@
 # Your previous /Users/Clayton/.bash_profile file was backed up as /Users/Clayton/.bash_profile.macports-saved_2013-02-11_at_16:02:03
 ##
 
+if [ -f ~/.git-completion.bash ]; then
+    . ~/.git-completion.bash
+fi
+
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
