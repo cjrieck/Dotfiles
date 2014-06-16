@@ -22,7 +22,9 @@ function git-branch-prompt {
 export PATH=$PATH:/usr/local/heroku/bin/:usr/local/bin:/opt/local/bin:/opt/local/sbin:/Users/Clayton/.rvm/gems/ruby-1.9.3-p362/bin:/Users/Clayton/.rvm/gems/ruby-1.9.3-p362@global/bin:/Users/Clayton/.rvm/rubies/ruby-1.9.3-p362/bin:/Users/Clayton/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin
 # export PS1="\033[95m\033[1m\w\033[0m \n\033[96m❯\033[0m "
 
-export PS1="\033[95m\033[1m\w\[\033[0m\]\[\033[0;32m\]\$(git-branch-prompt)\[\033[0m\] \n\033[96m❯\[\033[0m \]"
+export PS1="\\033[95m\033[1m\w\[\033[0m\]\[\033[0;32m\]\$(git-branch-prompt)\[\033[0m\] \n\[\033[96m\]❯ \[\033[0m\]"
+# export PS1="\033[95m\033[1m\w\[\033[0m\]\[\033[0;32m\]\$(git-branch-prompt)\[\033[0m\] \n\033[96m❯\[\033[0m \]"
+
 # APPS
 # ------------------------------------------------------------------------------
 alias subl='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
@@ -51,3 +53,6 @@ alias minke='ssh barbara@minke.wheatoncollege.edu'
 #--------------------------------
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
