@@ -51,7 +51,7 @@ alias status='git status'
 alias anubis='ssh Clayton@anubis'
 alias minke='ssh barbara@minke.wheatoncollege.edu'
 #--------------------------------
-
+alias update='brew update && brew upgrade && sudo gem update'
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 ### Added by the Heroku Toolbelt
