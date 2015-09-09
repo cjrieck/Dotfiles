@@ -25,6 +25,11 @@ export PATH=$PATH:/usr/local/heroku/bin/:usr/local/bin:/opt/local/bin:/opt/local
 export PS1="\\033[95m\033[1m\w\[\033[0m\]\[\033[0;32m\]\$(git-branch-prompt)\[\033[0m\] \n\[\033[96m\]❯ \[\033[0m\]"
 # export PS1="\033[95m\033[1m\w\[\033[0m\]\[\033[0;32m\]\$(git-branch-prompt)\[\033[0m\] \n\033[96m❯\[\033[0m \]"
 
+openRepository() {
+	cd ~/Desktop/Repos/
+	cd $1
+}
+
 # APPS
 # ------------------------------------------------------------------------------
 alias subl='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
@@ -35,7 +40,7 @@ alias xcode='open -a Xcode'
 # ------------------------------------------------------------------------------
 
 alias ..='cd ..'
-alias repos='cd ~/Desktop/Repos/'
+alias repos=openRepository
 # GIT COMMANDS
 # -------------------------------
 alias clone='git clone'
