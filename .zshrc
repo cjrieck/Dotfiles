@@ -33,7 +33,7 @@ POWERLEVEL9K_BATTERY_ICON='\uf1e6 '
 POWERLEVEL9K_TIME_FORMAT="%D{\uf017 %H:%M}"
 
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(time)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(virtualenv time)
 
 POWERLEVEL9K_STATUS_VERBOSE=false
 
@@ -53,19 +53,6 @@ POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='009'
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="%{%F{249}%}\u250f"
 POWERLEVEL9K_MULTILINE_SECOND_PROMPT_PREFIX="%{%F{249}%}\u2517%{%F{default}%} "
-
-#POWERLINE_PATH="short"
-#POWERLINE_HIDE_USER_NAME="true"
-#POWERLINE_HIDE_HOST_NAME="true"
-
-#POWERLINE_GIT_CLEAN="🎉"
-#POWERLINE_GIT_DIRTY="💩"
-#POWERLINE_GIT_ADDED="%F{green}✚%F{black}"
-#POWERLINE_GIT_MODIFIED="%F{blue}✹%F{black}"
-#POWERLINE_GIT_DELETED="%F{red}✖%F{black}"
-#POWERLINE_GIT_UNTRACKED="%F{yellow}✭%F{black}"
-#POWERLINE_GIT_RENAMED="➜"
-#POWERLINE_GIT_UNMERGED="═"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -181,6 +168,9 @@ alias minke='ssh barbara@minke.wheatoncollege.edu'
 #--------------------------------
 alias update='brew update --all && brew upgrade && sudo gem update'
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+#export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

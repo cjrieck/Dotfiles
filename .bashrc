@@ -19,7 +19,7 @@ function git-branch-prompt {
 }
 
 # Finished adapting your PATH environment variable for use with MacPorts.
-export PATH=$PATH:/Users/Clayton/.rvm/gems/ruby-2.2.3/bin:/usr/local/heroku/bin:usr/local/bin:/opt/local/bin:/opt/local/sbin:/Users/Clayton/.rvm/gems/ruby-1.9.3-p362/bin:/Users/Clayton/.rvm/gems/ruby-1.9.3-p362@global/bin:/Users/Clayton/.rvm/rubies/ruby-1.9.3-p362/bin:/Users/Clayton/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin
+# export PATH=$PATH:/Users/Clayton/.rvm/gems/ruby-2.2.3/bin:/usr/local/heroku/bin:usr/local/bin:/opt/local/bin:/opt/local/sbin:/Users/Clayton/.rvm/gems/ruby-1.9.3-p362/bin:/Users/Clayton/.rvm/gems/ruby-1.9.3-p362@global/bin:/Users/Clayton/.rvm/rubies/ruby-1.9.3-p362/bin:/Users/Clayton/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin
 # export PS1="\033[95m\033[1m\w\033[0m \n\033[96m❯\033[0m "
 
 export PS1="\\033[95m\033[1m\w\[\033[0m\]\[\033[0;32m\]\$(git-branch-prompt)\[\033[0m\] \n\[\033[96m\]❯ \[\033[0m\]"
@@ -60,4 +60,6 @@ alias minke='ssh barbara@minke.wheatoncollege.edu'
 #--------------------------------
 alias update='brew update --all && brew upgrade && sudo gem update'
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+# export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
