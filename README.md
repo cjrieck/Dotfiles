@@ -10,6 +10,7 @@ My dotfiles
 ## Some good ol' plugins
 
 * https://github.com/scmbreeze/scm_breeze
+* https://github.com/junegunn/fzf
 * https://github.com/zsh-users/zsh-autosuggestions
 * https://github.com/ggreer/the_silver_searcher
 * https://github.com/bhilburn/powerlevel9k
