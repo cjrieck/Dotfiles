@@ -124,13 +124,6 @@ alias minke='ssh barbara@minke.wheatoncollege.edu'
 #--------------------------------
 alias update='brew update --all && brew upgrade && sudo gem update'
 
-
-
-export AWS_ACCESS_KEY_ID=AKIATQJYDJNL7Y3XRTW4
-export AWS_SECRET_ACCESS_KEY=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
-
-#export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
 export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
 eval "$(rbenv init -)"
 
