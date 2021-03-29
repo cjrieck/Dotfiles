@@ -7,9 +7,8 @@ ANDROID_HOME=/usr/local/opt/android-sdk/
 export ANDROID_HOME=$ANDROID_HOME
 export ANDROID_SDK_ROOT=$ANDROID_HOME
 export ANDROID_SDK_HOME=$ANDROID_HOME
-export ANDROID_SDK=/Users/clayton/Library/Android/sdk
-export PATH=/Users/clayton/Library/Android/sdk/platform-tools:$PATH
-
+export ANDROID_SDK=$HOME/Library/Android/sdk
+export PATH=$HOME/Library/Android/sdk/platform-tools:$PATH
 
 POWERLEVEL9K_MODE='nerdfont-complete'
 
@@ -127,6 +126,9 @@ alias update='brew update --all && brew upgrade && sudo gem update'
 export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
 eval "$(rbenv init -)"
 
+# Peotry Python Deps Manager
+export PATH="source $HOME/.poetry/env:$PATH"
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # The next line updates PATH for the Google Cloud SDK.
@@ -134,3 +136,4 @@ if [ -f '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.i
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc' ]; then . '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'; fi
+export PATH="/usr/local/opt/node@14/bin:$PATH"
